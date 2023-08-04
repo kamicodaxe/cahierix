@@ -18,10 +18,32 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  @variants responsive {
+    .hero-sm {
+      background-position-x: calc((100vw / 12) + 10rem);
+      background-repeat: no-repeat;
+      /* background-size: 90% auto; */
+    }
+
+    .hero-xl {
+      background-position-x: calc((100vw / 8) + 10rem);
+      background-repeat: no-repeat;
+      background-size: 80% auto;
+    }
+
+  }
+}
+
+@layer components {
+  .hero-base {
+    @apply bg-no-repeat;
+    background-size: auto 100%;
+  }
+
 }
