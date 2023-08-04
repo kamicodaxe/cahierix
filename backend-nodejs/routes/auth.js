@@ -1,3 +1,8 @@
+/**
+ * TODOS
+ * - Add and implemnt express-rate-limiter
+ * - Sanitize all req body and req params before usage in api
+ */
 const express = require('express');
 const crypto = require("crypto");
 const path = require("path");
