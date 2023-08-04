@@ -14,7 +14,37 @@ const prisma = new PrismaClient();
 
 const router = express.Router();
 
-// Passwordless registration
+/**
+ * @api {post} auth/register Register a new user
+ * @apiName RegisterUser
+ * @apiGroup User
+ *
+ * @apiParam  {String} email Email address of the user.
+ * @apiParam  {String} phone Phone number of the user.
+ * @apiParam  {String} countryCode Country code of the user's phone number.
+ * @apiParam  {String} firstName First name of the user.
+ * @apiParam  {String} lastName Last name of the user.
+ *
+ * @apiSuccess {String} token JWT token containing the user's userId.
+ *
+ * @apiSuccessExample Success-Response:
+ *     HTTP/1.1 200 OK
+ *     {
+ *       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+ *     }
+ *
+ * @apiErrorExample Error-Response:
+ *     HTTP/1.1 400 Bad Request
+ *     {
+ *       "message": "User already exists"
+ *     }
+ *
+ * @apiErrorExample Error-Response:
+ *     HTTP/1.1 500 Internal Server Error
+ *     {
+ *       "message": "Internal server error"
+ *     }
+ */
 router.post('/register', async (req, res) => {
     try {
         const { email, phone, countryCode, firstName, lastName } = req.body;
