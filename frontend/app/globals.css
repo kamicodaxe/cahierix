@@ -46,4 +46,8 @@ body {
     background-size: auto 100%;
   }
 
+  .section {
+    @apply container sm:w-10/12 xl:w-9/12 py-16;
+  }
+
 }
