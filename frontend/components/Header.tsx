@@ -7,7 +7,7 @@ type Props = {
 const Header: React.FC<Props> = ({ }) => {
     return (
         <div className="w-full
-        bg-[url('http://localhost:3000/home-image.png')]
+        bg-[url('http://localhost:3000/home-banner.jpg')]
         hero-base sm:hero-sm xl:hero-xl
         ">
             <header
@@ -15,12 +15,12 @@ const Header: React.FC<Props> = ({ }) => {
             >
                 <nav className="flex justify-between pr-4">
                     <Logo />
-                    <ul className="hidden sm:flex space-x-4 flex-1 items-center justify-start pl-4">
+                    <ul className="hidden md:flex space-x-4 flex-1 items-center justify-start pl-4">
                         <li className="font-semibold">Accueil</li>
                         <li className="">Suivis des commandes</li>
                         <li className="">Boutique</li>
                     </ul>
-                    <img className="sm:hidden" src="/hamburger.svg" />
+                    <img className="md:hidden cursor-pointer" alt="Menu button" src="/hamburger.svg" />
                 </nav>
 
                 <div className="text-black space-y-8 pt-16 px-8 text-center sm:text-left sm:px-0 sm:pt-16 md:w-8/12 lg:w-7/12 xl:w-1/2">
