@@ -1,3 +1,4 @@
+import CTA from '@/components/CTA'
 import Header from '@/components/Header'
 import HowItWorks from '@/components/HowItWorks'
 import ProductsPreview from '@/components/ProductsPreview'
@@ -15,6 +16,7 @@ export default function Home() {
       <Testimonials />
       <Promotions />
       <ProductsPreview />
+      <CTA />
     </main>
   )
 }
