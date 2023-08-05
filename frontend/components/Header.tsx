@@ -38,7 +38,7 @@ const Header: React.FC<Props> = ({ }) => {
                     <button className="px-4 py-4 lg:px-8 text-base lg:text-xl rounded-lg bg-[#470047]">
                         Envoyez nous votre liste
                     </button>
-                    <button className="px-4 py-4 lg:px-8 text-base lg:text-xl rounded-lg border-2 border-white">
+                    <button className="px-4 py-[14px] lg:px-8 text-base lg:text-xl rounded-lg border-2 border-white">
                         Liste des manuels
                     </button>
                 </div>
