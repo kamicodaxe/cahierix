@@ -10,25 +10,25 @@ const HowItWorks: React.FC<Props> = ({ }) => {
             <div className="section mx-auto text-white text-center">
                 <h2 className=" text-4xl mb-8">Comment ça marche</h2>
 
-                <div className="space-y-8 md:flex md:space-y-0">
-                    <div>
-                        <span className="block h-24 w-24 text-black bg-white leading-[6rem] text-4xl font-semibold rounded-full mx-auto">
+                <div className="space-y-8 md:flex md:space-x-0 md:space-y-2">
+                    <div className="flex-1">
+                        <span className="number-label mx-auto">
                             1
                         </span>
                         <p className="mt-4 text-lg md:text-base">
                             Envoyez-nous votre liste d'effets scolaires via notre site internet ou whatsapp au 693 369 xxx.
                         </p>
                     </div>
-                    <div>
-                        <span className="block h-24 w-24 text-black bg-white leading-[6rem] text-4xl font-semibold rounded-full mx-auto">
+                    <div className="flex-1">
+                        <span className="number-label mx-auto">
                             2
                         </span>
                         <p className="mt-4 text-lg md:text-base">
                             Notre équipe d'expert prépare soigneusement votre commande.
                         </p>
                     </div>
-                    <div>
-                        <span className="block h-24 w-24 text-black bg-white leading-[6rem] text-4xl font-semibold rounded-full mx-auto">
+                    <div className="flex-1">
+                        <span className="number-label mx-auto">
                             3
                         </span>
                         <p className="mt-4 text-lg md:text-base">

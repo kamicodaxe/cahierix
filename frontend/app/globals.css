@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -37,6 +37,32 @@ body {
       background-size: 80% auto;
     }
 
+    .m-whyus {
+      margin-left: calc(50% - 6rem - 1rem);
+    }
+
+    .m-whyus-lg {
+      margin-left: calc(50% - 6rem - 1rem);
+    }
+
+    .whyus-hero {
+      background-position-x: -150vw;
+      background-repeat: no-repeat;
+      background-size: 200% auto;
+    }
+
+    .whyus-hero-md {
+      background-position-x: -50vw;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+
+    .whyus-hero-lg {
+      background-position-x: -50vw;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+
   }
 }
 
@@ -49,5 +75,11 @@ body {
   .section {
     @apply container sm:w-10/12 xl:w-9/12 py-16;
   }
+
+  .number-label {
+    @apply block h-24 w-24 text-black bg-white leading-[6rem] text-4xl font-semibold rounded-full shrink-0;
+  }
+
+  
 
 }
