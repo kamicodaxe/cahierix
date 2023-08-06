@@ -6,34 +6,47 @@ type Props = {
 
 const Testimonials: React.FC<Props> = ({ }) => {
     return (
-        <section className="w-full bg-gray-800">
+        <section className="w-full bg-[#3D393D]">
             <div className="section mx-auto text-white">
-                <h2 className="text-4xl text-center mb-8">Témoignages</h2>
 
-                <div className="flex justify-between">
+                <div className="mx-4 md:mx-0">
 
-                    <div className="h-16 w-16 text-6xl text-center bg-gray-60 text-white shrink-0 -translate-y-8">
-                        <p className="leading-[6rem]">"</p>
+                    <h2 className="text-4xl text-center mb-8 font-semibold">Témoignages</h2>
+
+                    <div className="flex justify-between">
+
+                        <div className="h-16 w-16 text-6xl text-center bg-gray-60 text-white shrink-0 -translate-y-8">
+                            <img src="/quote-left.svg" className="h-24" alt="quote-left svg" />
+                        </div>
+
+                        <div className="max-w-2xl self-center text-center">
+                            <p className="">
+                                Je recommande vivement Cahierix à tous les parents occupés ! J'étais toujours stressé avant la rentrée,
+                                à essayer de trouver tous les articles scolaires nécessaires. Mais depuis que j'ai découvert Cahierix,
+                                tout est devenu beaucoup plus simple. Leur équipe attentionnée s'occupe de tout, et j'ai reçu ma commande
+                                rapidement. C'est un service fiable et pratique que je ne peux que louer. Merci de rendre la rentrée scolaire si agréable !
+                            </p>
+
+                            <p className="pt-8"><i>Herman D.</i></p>
+
+                            <div className="space-x-2 mt-8">
+                                <span className="w-4 h-4 rounded-full bg-white inline-block"></span>
+                                <span className="w-4 h-4 rounded-full bg-white inline-block bg-[#F8C004]"></span>
+                                <span className="w-4 h-4 rounded-full bg-white inline-block"></span>
+                                <span className="w-4 h-4 rounded-full bg-white inline-block"></span>
+                                <span className="w-4 h-4 rounded-full bg-white inline-block"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div className="h-16 w-16 text-6xl text-center bg-gray-60 text-white shrink-0 self-end -translate-y-16">
+                            <img src="/quote-right.svg" className="h-24" alt="quote-right svg" />
+                        </div>
+
                     </div>
-
-                    <div className="max-w-2xl self-center text-center">
-                        <p className="">
-                            Envoyez-nous votre liste d'effets scolaires via notre site internet ou whatsapp au 693 369 xxx.
-                            Notre équipe d'expert prépare soigneusement votre commande.
-                            Recevez vos cahiers et livres directements chez vous, prêt pour la rentrée.
-                            Notre équipe d'expert prépare soigneusement votre commande.
-                        </p>
-
-                        <p className="pt-8"><i>Herman D.</i></p>
-                        
-                    </div>
-                    
-
-                    <div className="h-16 w-16 text-6xl text-center bg-gray-60 text-white shrink-0 self-end translate-y-8">
-                        <p className="leading-[6rem]">"</p>
-                    </div>
-                    
                 </div>
+
             </div>
         </section>
     )
