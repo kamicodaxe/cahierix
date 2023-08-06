@@ -7,7 +7,7 @@ type Props = {
 const Header: React.FC<Props> = ({ }) => {
     return (
         <div className="w-full
-        bg-[url('http://localhost:3000/home-banner.jpg')]
+        bg-[url('/home-banner.jpg')]
         hero-base sm:hero-sm xl:hero-xl
         ">
             <header

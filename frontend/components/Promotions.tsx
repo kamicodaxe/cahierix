@@ -6,8 +6,8 @@ type Props = {
 
 const Promotions: React.FC<Props> = ({ }) => {
     return (
-        <section className="w-full bg-[url('http://localhost:3000/promotion.png')] bg-cover">
-            <div className="section mx-auto  text-white">
+        <section className="w-full bg-[url('/promotion.png')] bg-cover">
+            <div className="section mx-auto text-white">
 
                 <div className="mx-4 md:mx-0">
 
