@@ -15,7 +15,7 @@ const Testimonials: React.FC<Props> = ({ }) => {
 
                     <div className="flex justify-between">
 
-                        <div className="h-16 w-16 text-6xl text-center bg-gray-60 text-white shrink-0 -translate-y-8">
+                        <div className="h-16 w-16 text-6xl text-center bg-gray-60 text-white shrink-0 hidden sm:block -translate-y-8">
                             <img src="/quote-left.svg" className="h-24" alt="quote-left svg" />
                         </div>
 
@@ -30,17 +30,17 @@ const Testimonials: React.FC<Props> = ({ }) => {
                             <p className="pt-8"><i>Herman D.</i></p>
 
                             <div className="space-x-2 mt-8">
-                                <span className="w-4 h-4 rounded-full bg-white inline-block"></span>
-                                <span className="w-4 h-4 rounded-full bg-white inline-block bg-[#F8C004]"></span>
-                                <span className="w-4 h-4 rounded-full bg-white inline-block"></span>
-                                <span className="w-4 h-4 rounded-full bg-white inline-block"></span>
-                                <span className="w-4 h-4 rounded-full bg-white inline-block"></span>
+                                <span className="w-4 h-4 rounded-full inline-block bg-white"></span>
+                                <span className="w-4 h-4 rounded-full inline-block bg-[#F8C004]"></span>
+                                <span className="w-4 h-4 rounded-full inline-block bg-white"></span>
+                                <span className="w-4 h-4 rounded-full inline-block bg-white"></span>
+                                <span className="w-4 h-4 rounded-full inline-block bg-white"></span>
                             </div>
 
                         </div>
 
 
-                        <div className="h-16 w-16 text-6xl text-center bg-gray-60 text-white shrink-0 self-end -translate-y-16">
+                        <div className="h-16 w-16 text-6xl text-center bg-gray-60 text-white shrink-0 hidden sm:block self-end -translate-y-16">
                             <img src="/quote-right.svg" className="h-24" alt="quote-right svg" />
                         </div>
 
