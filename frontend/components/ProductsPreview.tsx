@@ -20,7 +20,7 @@ const ProductsPreview: React.FC<Props> = ({ }) => {
                             "Autres"
                         ].map(
                             category => (
-                                <span className="text-md md:text-base inline-block" id={category}>
+                                <span className="text-md md:text-base inline-block" key={category}>
                                     {category}
                                 </span>
                             )
@@ -32,7 +32,7 @@ const ProductsPreview: React.FC<Props> = ({ }) => {
                     {
                         new Array(8).fill('').map(
                             (_, i) => (
-                                <div className="h-64 mx-4 md:mx-0 bg-gray-300" />
+                                <div key={i + _} className="h-64 mx-4 md:mx-0 bg-gray-300" />
                             )
                         )
                     }

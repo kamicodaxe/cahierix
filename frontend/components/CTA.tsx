@@ -14,8 +14,8 @@ const CTA: React.FC<Props> = ({ }) => {
 
                     <div className="max-w-2xl text-center mx-auto">
                         <p className="">
-                            Préparez-vous pour la rentrée dès maintenant, envoyez-nous votre liste d'effets
-                            scolaires! L'un de nos now collaborateurs vous contactera dans les 15 minutes suivant
+                            Préparez-vous pour la rentrée dès maintenant, envoyez-nous votre liste d&apos;effets
+                            scolaires! L&apos;un de nos now collaborateurs vous contactera dans les 15 minutes suivant
                             la réception de la liste pour vous offrir un service personnalisé.
                         </p>
                     </div>

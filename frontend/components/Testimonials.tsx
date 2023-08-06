@@ -21,10 +21,10 @@ const Testimonials: React.FC<Props> = ({ }) => {
 
                         <div className="max-w-2xl self-center text-center">
                             <p className="">
-                                Je recommande vivement Cahierix à tous les parents occupés ! J'étais toujours stressé avant la rentrée,
-                                à essayer de trouver tous les articles scolaires nécessaires. Mais depuis que j'ai découvert Cahierix,
-                                tout est devenu beaucoup plus simple. Leur équipe attentionnée s'occupe de tout, et j'ai reçu ma commande
-                                rapidement. C'est un service fiable et pratique que je ne peux que louer. Merci de rendre la rentrée scolaire si agréable !
+                                Je recommande vivement Cahierix à tous les parents occupés! J&apos;étais toujours stressé avant la rentrée,
+                                à essayer de trouver tous les articles scolaires nécessaires. Mais depuis que j&apos;ai découvert Cahierix,
+                                tout est devenu beaucoup plus simple. Leur équipe attentionnée s&apos;occupe de tout, et j&apos;ai reçu ma commande
+                                rapidement. C&apos;est un service fiable et pratique que je ne peux que louer. Merci de rendre la rentrée scolaire si agréable !
                             </p>
 
                             <p className="pt-8"><i>Herman D.</i></p>

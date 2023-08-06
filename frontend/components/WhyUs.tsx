@@ -23,7 +23,7 @@ const WhyUs: React.FC<Props> = ({ }) => {
                                 1
                             </span>
                             <p className="mt-4 text-lg md:text-base">
-                                Envoyez-nous votre liste d'effets scolaires via notre site internet ou whatsapp au 693 369 xxx.
+                                Envoyez-nous votre liste d&apos;effets scolaires via notre site internet ou whatsapp au 693 369 xxx.
                             </p>
                         </div>
                         <div className="flex items-center space-x-4">
@@ -31,7 +31,7 @@ const WhyUs: React.FC<Props> = ({ }) => {
                                 2
                             </span>
                             <p className="mt-4 text-lg md:text-base">
-                                Notre équipe d'expert prépare soigneusement votre commande.
+                                Notre équipe d&apos;expert prépare soigneusement votre commande.
                             </p>
                         </div>
                         <div className="flex items-center space-x-4">
@@ -47,7 +47,7 @@ const WhyUs: React.FC<Props> = ({ }) => {
                                 4
                             </span>
                             <p className="mt-4 text-lg md:text-base">
-                                Notre équipe d'expert prépare soigneusement votre commande.
+                                Notre équipe d&apos;expert prépare soigneusement votre commande.
                             </p>
                         </div>
                     </div>

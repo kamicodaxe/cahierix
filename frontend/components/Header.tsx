@@ -29,7 +29,7 @@ const Header: React.FC<Props> = ({ }) => {
                         Simplifiez votre rentrée scolaire avec <span className="text-[#470047]">Cahierix</span>
                     </h1>
                     <p className="text-[18px] sm:text-xl">
-                        Envoyez-nous votre liste d'effets scolaires, on s'occupe de tout ! Nous pratiquons les meilleurs coûts sur le marché camerounais. Nous vous repondons en moins de 15mins.
+                        Envoyez-nous votre liste d&apos;effets scolaires, on s&apos;occupe de tout ! Nous pratiquons les meilleurs coûts sur le marché camerounais. Nous vous repondons en moins de 15mins.
                     </p>
 
                 </div>
