@@ -38,29 +38,7 @@ body {
     }
 
     .m-whyus {
-      margin-left: calc(50% - 6rem - 1rem);
-    }
-
-    .m-whyus-lg {
-      margin-left: calc(50% - 6rem - 1rem);
-    }
-
-    .whyus-hero {
-      background-position-x: -150vw;
-      background-repeat: no-repeat;
-      background-size: 200% auto;
-    }
-
-    .whyus-hero-md {
-      background-position-x: -50vw;
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-    }
-
-    .whyus-hero-lg {
-      background-position-x: -50vw;
-      background-repeat: no-repeat;
-      background-size: 100% auto;
+      margin-left: calc(50% - 6rem - 0.5rem);
     }
 
   }
@@ -79,7 +57,5 @@ body {
   .number-label {
     @apply block h-24 w-24 text-black bg-white leading-[6rem] text-4xl font-semibold rounded-full shrink-0;
   }
-
-  
 
 }
