@@ -26,16 +26,22 @@ const Footer: React.FC<Props> = ({ }) => {
 
                     </div>
 
-                    <div className="md:mt-[9.5rem]">
+                    <div className="mt-4 md:mt-[9.5rem]">
                         <h3 className="text-2xl mb-4">Contact</h3>
                         <ul className="space-y-4">
                             <li>Tel: (+237) 693 369 ###</li>
                             <li>Email: contact@cahierix.com</li>
                             <li>Adresse: BP 5406 Biyemassi, Yaoundé</li>
                         </ul>
+                        <div className="flex space-x-4 mt-4">
+                            <a href="https://fb.com/cahierix" target={"_blank"}>
+                                <img src="/facebook-icon.svg" alt="Facebook icon" />
+                            </a>
+                            <img src="/linkedin-icon.svg" alt="linkedin icon" />
+                        </div>
                     </div>
 
-                    <div className="lg:mt-[9.5rem]">
+                    <div className="mt-4 lg:mt-[9.5rem]">
                         <h3 className="text-2xl mb-4">Liens</h3>
                         <ul className="space-y-4">
                             <li>Accueil</li>
@@ -47,6 +53,14 @@ const Footer: React.FC<Props> = ({ }) => {
                 </div>
 
             </div>
+
+            <a
+                href="https://bogital.com"
+                target={"_blank"}
+                className="text-xs text-white text-center block pt-4 p-2 md:pt-2 hover:underline">
+                Coded with ❤️ by <span className="text-teal-400 uppercase">Bogital</span>
+            </a>
+
         </section>
     )
 }
