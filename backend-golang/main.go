@@ -1,34 +1,29 @@
 package main
 
 import (
+	"log"
+
 	"github.com/gofiber/fiber/v2"
-	"gorm.io/driver/sqlite"
-	"gorm.io/gorm"
+	"github.com/gofiber/fiber/v2/middleware/logger"
+	"github.com/kamicodaxe/cahierix/config"
+	"github.com/kamicodaxe/cahierix/handlers"
 )
-
-func initDatabase() (*gorm.DB, error) {
-	db, err := gorm.Open(sqlite.Open("database.db"), &gorm.Config{})
-	if err != nil {
-		return nil, err
-	}
-	return db, nil
-}
-
-func setupRoutes(app *fiber.App, db *gorm.DB) {
-	// Define your API routes here
-}
 
 func main() {
 	app := fiber.New()
+	app.Use(logger.New())
 
-	db, err := initDatabase()
-	if err != nil {
-		panic("Failed to connect to the database")
-	}
+	// Connect Database
+	config.Connect()
 
-	setupRoutes(app, db)
+	app.Get("/api/healthchecker", func(c *fiber.Ctx) error {
+		return c.Status(200).JSON(fiber.Map{
+			"status":  "success",
+			"message": "Welcome to Cahierix!",
+		})
+	})
 
-	// Start the server
-	port := ":3001" // Change the port as needed
-	app.Listen(port)
+	app.Get("/products", handlers.GetProdcts)
+
+	log.Fatal(app.Listen(":5000"))
 }
