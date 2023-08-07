@@ -8,7 +8,7 @@ const WhyUs: React.FC<Props> = ({ }) => {
     return (
         <section className="w-full relative">
             
-            <div className="absolute left-0 top-0 right-1/2 -z-10 bottom-0 bg-[#FAABAA] md:bg-[url('/why-cahierix.png')] md:bg-cover">
+            <div className="absolute left-0 top-0 right-1/2 -z-10 bottom-0 bg-[#FAABAA] md:bg-[url('/why-cahierix.jpg')] md:bg-cover">
 
             </div>
 
