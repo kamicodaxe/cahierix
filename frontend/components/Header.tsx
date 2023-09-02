@@ -25,10 +25,10 @@ const Header: React.FC<Props> = ({ }) => {
 
                 <div className="text-black space-y-8 pt-16 px-8 text-center sm:text-left sm:px-0 sm:pt-16 md:w-8/12 lg:w-7/12 xl:w-1/2">
 
-                    <h1 className="text-4xl sm:text-6xl">
+                    <h1 className="text-4xl sm:text-6xl dark:text-white">
                         Simplifiez votre rentrée scolaire avec <span className="text-[#470047]">Cahierix</span>
                     </h1>
-                    <p className="text-[18px] sm:text-xl">
+                    <p className="text-[18px] sm:text-xl dark:text-white">
                         Envoyez-nous votre liste d&apos;effets scolaires, on s&apos;occupe de tout ! Nous pratiquons les meilleurs coûts sur le marché camerounais. Nous vous repondons en moins de 15mins.
                     </p>
 
