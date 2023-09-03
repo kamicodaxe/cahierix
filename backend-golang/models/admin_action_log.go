@@ -8,7 +8,7 @@ import (
 
 type AdminActionLog struct {
 	gorm.Model
-	AdminID     string    `gorm:"not null" json:"adminId"`
+	AdminID     uint      `gorm:"not null" json:"adminId"`
 	Action      string    `gorm:"not null" json:"action"`
 	TargetID    string    `gorm:"not null" json:"targetId"`
 	TargetTable string    `gorm:"not null" json:"targetTable"`

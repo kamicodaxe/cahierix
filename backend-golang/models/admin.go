@@ -8,7 +8,7 @@ import (
 
 type Admin struct {
 	gorm.Model
-	ID         string           `gorm:"primaryKey" json:"id"`
+	ID         uint             `gorm:"primaryKey" json:"id"`
 	CreatedAt  time.Time        `gorm:"not null" json:"createdAt,omitempty"`
 	UpdatedAt  time.Time        `gorm:"not null" json:"updatedAt,omitempty"`
 	Username   string           `gorm:"type:varchar(128);unique;not null" json:"username"`
