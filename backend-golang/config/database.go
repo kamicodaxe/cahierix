@@ -1,33 +1,33 @@
-// @/config/database.go
+// @/config/Database.go
 package config
 
 import (
+	"log"
+	"os"
+
 	"github.com/kamicodaxe/cahierix/models"
-	"gorm.io/driver/sqlite"
+	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
 
 var Database *gorm.DB
-var DATABASE_URI string = "./cahierix.db"
 
 func Connect() error {
 	var err error
 
-	Database, err = gorm.Open(sqlite.Open(DATABASE_URI), &gorm.Config{
-		SkipDefaultTransaction: true,
-		PrepareStmt:            true,
+	dsn := os.Getenv("DSN")
+	Database, err = gorm.Open(mysql.Open(dsn), &gorm.Config{
+		DisableForeignKeyConstraintWhenMigrating: true,
 	})
-
 	if err != nil {
-		panic(err)
+		log.Fatalf("failed to connect: %v", err)
 	}
 
-	Database.AutoMigrate(
-		// Products Related
-		&models.Admin{},
-		&models.AdminActionLog{},
+	log.Println("Successfully connected to PlanetScale!")
 
-		// Products Related
+	if err := Database.AutoMigrate(
+		// &models.Admin{},
+		// &models.AdminActionLog{},
 		&models.ProductCategory{},
 		&models.ProductDiscount{},
 		&models.ProductImage{},
@@ -35,7 +35,10 @@ func Connect() error {
 		&models.ProductReview{},
 		&models.ProductSubcategory{},
 		&models.Product{},
-	)
+	); err != nil {
+		log.Fatalf("failed to auto-migrate: %v", err)
+		return err
+	}
 
 	return nil
 }
